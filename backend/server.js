@@ -13,7 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // routet
-app.use("/api/users", require("./routes/userRoutes"));
+app.use("/api/auth", require("./routes/Auth"));
+app.use("/api/users", require("./routes/Users"));
 
 //teksti API:n testaukseen
 app.get("/", (req, res) => {
