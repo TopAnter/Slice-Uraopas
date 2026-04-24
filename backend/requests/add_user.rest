@@ -1,8 +1,11 @@
-POST http://localhost:5000/api/users
+POST http://localhost:5000/api/auth/register
 Content-Type: application/json
 
 {
-  "name": "Teemu",
-  "email": "teemu@testi.com",
-  "interests": ["koodaus", "pelit"]
+  "username": "testuser",
+  "firstName": "Matti",
+  "lastName": "Meikäläinen",
+  "age": 22,
+  "password": "123456",
+  "field": "IT"
 }
