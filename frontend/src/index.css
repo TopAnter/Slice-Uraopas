@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* SLICE.FI tumma navy -teema */
+:root {
+  /* Syvä navy-tausta */
+  --background: 222 47% 11%;
+  --foreground: 210 40% 92%;
+  --border: 220 30% 22%;
+  --input: 220 30% 26%;
+  --ring: 195 90% 50%;
+
+  /*Kortit*/
+  --card: 222 40% 15%;
+  --card-foreground: 210 40% 92%;
+
+  /* Syaani korostusväri */
+  --primary: 195 90% 50%;
+  --primary-foreground: 222 47% 11%;
+  --secondary: 222 40% 20%;
+  --secondary-foreground: 210 40% 80%;
+  --muted: 222 30% 18%;
+  --muted-foreground: 215 20% 55%;
+  --accent: 195 90% 50%;
+  --accent-foreground: 222 47% 11%;
+}
+
+@layer base {
+  * { 
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  textarea:focus, 
+  input:focus { 
+    outline: none; 
+    }
+}
